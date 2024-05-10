@@ -23,7 +23,7 @@ In general, we use a csv file to indicate the executing tasks (including trainin
 
 (5) Test: the indicator for testing.
 
-For example, the below command is used to train one model for the tasks listed in the file `execute_list/train_all.csv`. Note that the argument `max_token_num` should be set to a value larger than the combined number of tokens in both language instructions and time series patches.
+For example, the below command is used to train one model for the tasks listed in the file `execute_list/train_all.csv`. 
 ```
 python run_avg.py --gpu 0 --training_list execute_list/train_all.csv --percent 100
 ```
